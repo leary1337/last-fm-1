@@ -49,6 +49,8 @@ const searchTracks = async (searchString) => {
  * @returns {HTMLDivElement} - Html элемент карточки.
  */
 const createCardItem = (item) => {
+    if (!item.img)
+        return null;
     const element = document.createElement('div');
     element.classList.add('card-item');
     element.innerHTML = `
@@ -72,20 +74,27 @@ const renderArtists = (artists) => {
         <div id='artistList' class='card-items'></div>
     `;
     if (!artists || !artists.length) {
-        const notFoundElem = document.createElement('p');
-        notFoundElem.textContent = 'Not Found!';
-        elem.appendChild(notFoundElem);
+        elem.appendChild(createNotFoundElem());
         return null;
     }
-    
-    const parentElement = document.getElementById('artistList');
+    let items = '';
     for (const artist of artists) {
-        parentElement.appendChild(createCardItem({
+        const item = createCardItem({
             'img': artist.image[3]['#text'],
             'title': artist.name,
             'subtitle': artist.listeners,
-        }));
+        });
+        if (!item)
+            continue;
+        items += item.outerHTML;
     }
+    
+    if (!items) {
+        elem.appendChild(createNotFoundElem());
+        return null;
+    }
+    const parentElement = document.getElementById('artistList');
+    parentElement.innerHTML += items;
 };
 
 /**
@@ -99,20 +108,26 @@ const renderAlbums = (albums) => {
         <div id='albumList' class='card-items'></div>
     `;
     if (!albums || !albums.length) {
-        const notFoundElem = document.createElement('p');
-        notFoundElem.textContent = 'Not Found!';
-        elem.appendChild(notFoundElem);
+        elem.appendChild(createNotFoundElem());
         return null;
     }
-    
-    const parentElement = document.getElementById('albumList');
+    let items = '';
     for (const album of albums) {
-        parentElement.appendChild(createCardItem({
+        const item = createCardItem({
             'img': album.image[3]['#text'],
             'title': album.name,
-            'subtitle': album.artist,
-        }));
+            'subtitle': album.listeners,
+        });
+        if (!item)
+            continue;
+        items += item.outerHTML;
     }
+    if (!items) {
+        elem.appendChild(createNotFoundElem());
+        return null;
+    }
+    const parentElement = document.getElementById('albumList');
+    parentElement.innerHTML += items;
 };
 
 /**
@@ -126,9 +141,7 @@ const renderTracks = (tracks) => {
         <div id='trackList' class='tracks'></div>
     `;
     if (!tracks || !tracks.length) {
-        const notFoundElem = document.createElement('p');
-        notFoundElem.textContent = 'Not Found!';
-        elem.appendChild(notFoundElem);
+        elem.appendChild(createNotFoundElem());
         return null;
     }
     
@@ -172,6 +185,16 @@ const removeOld = () => {
             continue;
         element.innerHTML = '';
     }
+};
+
+/**
+ * Возвращает элемент для отображения того, что ничего не найдено.
+ * @returns {HTMLParagraphElement} - Элемент "Ничего не найдено"
+ */
+const createNotFoundElem = () => {
+    const notFoundElem = document.createElement('p');
+    notFoundElem.textContent = 'Not Found!';
+    return notFoundElem;
 };
 
 const searchElement = document.getElementById('searchForm');

@@ -81,7 +81,7 @@ const renderArtists = async () => {
     if (!artists)
         return null;
     
-    const parentElement = document.getElementById('artistList');
+    let items = '';
     for (const artist of artists) {
         const element = document.createElement('div');
         element.classList.add('content__artistItem');
@@ -94,8 +94,10 @@ const renderArtists = async () => {
             continue;
         
         element.appendChild(createTags(tags));
-        parentElement.appendChild(element);
+        items += element.outerHTML;
     }
+    const parentElement = document.getElementById('artistList');
+    parentElement.innerHTML = items;
 };
 
 /**
@@ -106,7 +108,7 @@ const renderTracks = async () => {
     if (!tracks)
         return null;
     
-    const parentElement = document.getElementById('trackList');
+    let items = '';
     for (const track of tracks) {
         const element = document.createElement('div');
         element.classList.add('content__trackItem');
@@ -128,8 +130,10 @@ const renderTracks = async () => {
         
         rightElement.appendChild(createTags(tags));
         element.appendChild(rightElement);
-        parentElement.appendChild(element);
+        items += element.outerHTML;
     }
+    const parentElement = document.getElementById('trackList');
+    parentElement.innerHTML = items;
 };
 
 /**

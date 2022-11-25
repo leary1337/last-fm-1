@@ -286,6 +286,7 @@ body {
 
 .search-content {
 	display: flex;
+	min-height: 50vh;
 }
 
 .search-content__left {
