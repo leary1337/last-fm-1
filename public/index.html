@@ -1,358 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="utf-8"/>
-	<link rel="icon" href="favicon.ico"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="theme-color" content="#000000"/>
-	<title>Last FM</title>
-	<link rel="stylesheet" href="../src/index.css">
+    <meta charset='utf-8' />
+    <link rel='icon' href='favicon.ico' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name='theme-color' content='#000000' />
+    <title>Last FM</title>
+    <link rel='stylesheet' href='index.css'>
+    <link
+        href='https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'
+        rel='stylesheet'>
 </head>
 <body>
-<header class="header">
-	<a href="/" class="header__logo"><img src="./logo.png" alt="LAST FM"></a>
-	<nav class="header__nav">
-		<ul class="header__navItems">
-			<li class="header__navItem"><a href="search.html">Search</a></li>
-			<li class="header__navItem"><a href="">Home</a></li>
-			<li class="header__navItem"><a href="#">Live</a></li>
-			<li class="header__navItem"><a href="#">Music</a></li>
-			<li class="header__navItem"><a href="#">Charts</a></li>
-			<li class="header__navItem"><a href="#">Events</a></li>
-			<li class="header__navItem"><a href="#">Features</a></li>
-		</ul>
-	</nav>
+<header class='header'>
+    <a href='/' class='header__logo'><img class='header__logo__image' src='./logo.png' alt='LAST FM'></a>
+    <nav class='header__nav'>
+        <ul class='header__navItems'>
+            <li class='header__navItem'><a class='header__navItem-link link' href='search.html'>Search</a></li>
+            <li class='header__navItem'><a class='header__navItem-link link' href='/'>Home</a></li>
+            <li class='header__navItem'><a class='header__navItem-link link' href='#'>Live</a></li>
+            <li class='header__navItem'><a class='header__navItem-link link' href='#'>Music</a></li>
+            <li class='header__navItem'><a class='header__navItem-link link' href='#'>Charts</a></li>
+            <li class='header__navItem'><a class='header__navItem-link link' href='#'>Events</a></li>
+            <li class='header__navItem'><a class='header__navItem-link link' href='#'>Features</a></li>
+        </ul>
+    </nav>
 </header>
 
-
-<main class="content">
-	<div class="container">
-		<section class="content__section">
-			<h1 class="content__title">Music</h1>
-			<h2 class="content__subtitle">Hot right now</h2>
-			<hr class="content__subtitleLine">
-			
-			<div class="content__artists">
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_1.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Kanye West</div>
-					<ul class="tags">
-						<li class="tag">hip-hop</li>
-						<li class="tag">rap</li>
-						<li class="tag">hip hop</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_2.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">BLACKPINK</div>
-					<ul class="tags">
-						<li class="tag">k-pop</li>
-						<li class="tag">kpop</li>
-						<li class="tag">pop</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_3.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">The Weeknd</div>
-					<ul class="tags">
-						<li class="tag">rnb</li>
-						<li class="tag">electronic</li>
-						<li class="tag">canadian</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_4.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">j-hope</div>
-					<ul class="tags">
-						<li class="tag">k-pop</li>
-						<li class="tag">hip hop</li>
-						<li class="tag">korean</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_5.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Drake</div>
-					<ul class="tags">
-						<li class="tag">hip-hop</li>
-						<li class="tag">rap</li>
-						<li class="tag">rnb</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_6.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Bladee</div>
-					<ul class="tags">
-						<li class="tag">cloud rap</li>
-						<li class="tag">hip hop</li>
-						<li class="tag">trap</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_7.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Tyler, the Creator</div>
-					<ul class="tags">
-						<li class="tag">hip-hop</li>
-						<li class="tag">rap</li>
-						<li class="tag">ofwgkta</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_8.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Steve Lacy</div>
-					<ul class="tags">
-						<li class="tag">free jazz</li>
-						<li class="tag">jazz</li>
-						<li class="tag">saxophone</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_9.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Frank Ocean</div>
-					<ul class="tags">
-						<li class="tag">rnb</li>
-						<li class="tag">soul</li>
-						<li class="tag">hip-hop</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_10.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Playboi Carti</div>
-					<ul class="tags">
-						<li class="tag">trap</li>
-						<li class="tag">hip-hop</li>
-						<li class="tag">cloud rap</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_11.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Kanye West</div>
-					<ul class="tags">
-						<li class="tag">hip-hop</li>
-						<li class="tag">rap</li>
-						<li class="tag">hip hop</li>
-					</ul>
-				</div>
-				
-				<div class="content__artistItem">
-					<img class="content__artistItemLogo" src="./img/artists/artist_12.webp" alt="artistLogo">
-					<div class="content__artistItemTitle item-title">Kanye West</div>
-					<ul class="tags">
-						<li class="tag">hip-hop</li>
-						<li class="tag">rap</li>
-						<li class="tag">hip hop</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		
-		<section class="content__section">
-			<h2 class="content__subtitle">Popular Tracks</h2>
-			<hr class="content__subtitleLine">
-			
-			<div class="content__tracks">
-				<div class="content__trackItem">
-					<div class="content__trackItemLeft">
-						<img class="content__trackItemLogo" src="./favicon.ico" alt="trackLogo">
-					</div>
-					<div class="content__trackItemRight">
-						<div class="content__trackItemTitle item-title">Yet to Come</div>
-						<p class="content__trackItemAuthor">BTS</p>
-						<ul class="tags">
-							<li class="tag">k-pop</li>
-							<li class="tag">bts</li>
-							<li class="tag">korean</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="content__trackItem">
-					<div class="content__trackItemLeft">
-						<img class="content__trackItemLogo" src="./favicon.ico" alt="trackLogo">
-					</div>
-					<div class="content__trackItemRight">
-						<div class="content__trackItemTitle item-title">Yet to Come</div>
-						<p class="content__trackItemAuthor">BTS</p>
-						<ul class="tags">
-							<li class="tag">k-pop</li>
-							<li class="tag">bts</li>
-							<li class="tag">korean</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="content__trackItem">
-					<div class="content__trackItemLeft">
-						<img class="content__trackItemLogo" src="./favicon.ico" alt="trackLogo">
-					</div>
-					<div class="content__trackItemRight">
-						<div class="content__trackItemTitle item-title">Yet to Come</div>
-						<p class="content__trackItemAuthor">BTS</p>
-						<ul class="tags">
-							<li class="tag">k-pop</li>
-							<li class="tag">bts</li>
-							<li class="tag">korean</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="content__trackItem">
-					<div class="content__trackItemLeft">
-						<img class="content__trackItemLogo" src="./favicon.ico" alt="trackLogo">
-					</div>
-					<div class="content__trackItemRight">
-						<div class="content__trackItemTitle item-title">Yet to Come</div>
-						<p class="content__trackItemAuthor">BTS</p>
-						<ul class="tags">
-							<li class="tag">k-pop</li>
-							<li class="tag">bts</li>
-							<li class="tag">korean</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="content__trackItem">
-					<div class="content__trackItemLeft">
-						<img class="content__trackItemLogo" src="./favicon.ico" alt="trackLogo">
-					</div>
-					<div class="content__trackItemRight">
-						<div class="content__trackItemTitle item-title">Yet to Come</div>
-						<p class="content__trackItemAuthor">BTS</p>
-						<ul class="tags">
-							<li class="tag">k-pop</li>
-							<li class="tag">bts</li>
-							<li class="tag">korean</li>
-						</ul>
-					</div>
-				</div>
-				
-				<div class="content__trackItem">
-					<div class="content__trackItemLeft">
-						<img class="content__trackItemLogo" src="./favicon.ico" alt="trackLogo">
-					</div>
-					<div class="content__trackItemRight">
-						<div class="content__trackItemTitle item-title">Yet to Come</div>
-						<p class="content__trackItemAuthor">BTS</p>
-						<ul class="tags">
-							<li class="tag">k-pop</li>
-							<li class="tag">bts</li>
-							<li class="tag">korean</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+<main class='content'>
+    <div class='container'>
+        <section class='content__section'>
+            <h1 class='content__title'>Music</h1>
+            <h2 class='content__subtitle'>Hot right now</h2>
+            <hr class='content__subtitleLine'>
+            <div id='artistList' class='content__artists'></div>
+        </section>
+        
+        <section class='content__section'>
+            <h2 class='content__subtitle'>Popular Tracks</h2>
+            <hr class='content__subtitleLine'>
+            
+            <div id='trackList' class='content__tracks'></div>
+        </section>
+    </div>
 </main>
 
-<footer class="footer">
-	
-	<div class="footer__top">
-		<div class="container">
-			<div class="footer__topCol">
-				<h2 class="footer__topColTitle">Company</h2>
-				<ul class="footer__topColItems">
-					<li class="footer__topColItem"><a href="#">About Last.fm</a></li>
-					<li class="footer__topColItem"><a href="#">Contact Us</a></li>
-					<li class="footer__topColItem"><a href="#">Jobs</a></li>
-				</ul>
-			</div>
-			
-			<div class="footer__topCol">
-				<h2 class="footer__topColTitle">Help</h2>
-				<ul class="footer__topColItems">
-					<li class="footer__topColItem"><a href="#">Track My Music</a></li>
-					<li class="footer__topColItem"><a href="#">Community Support</a></li>
-					<li class="footer__topColItem"><a href="#">Community Guidelines</a></li>
-					<li class="footer__topColItem"><a href="#">Help</a></li>
-				</ul>
-			</div>
-			
-			<div class="footer__topCol">
-				<h2 class="footer__topColTitle">Goodies</h2>
-				<ul class="footer__topColItems">
-					<li class="footer__topColItem"><a href="#">Download Scrobbler</a></li>
-					<li class="footer__topColItem"><a href="#">Developer API</a></li>
-					<li class="footer__topColItem"><a href="#">Free Music Downloads</a></li>
-					<li class="footer__topColItem"><a href="#">Merchandise</a></li>
-				</ul>
-			</div>
-			
-			<div class="footer__topCol">
-				<h2 class="footer__topColTitle">Account</h2>
-				<ul class="footer__topColItems">
-					<li class="footer__topColItem"><a href="#">Sign Up</a></li>
-					<li class="footer__topColItem"><a href="#">Log In</a></li>
-					<li class="footer__topColItem"><a href="#">Subscribe</a></li>
-				</ul>
-			</div>
-			
-			<div class="footer__topCol">
-				<h2 class="footer__topColTitle">Follow Us</h2>
-				<ul class="footer__topColItems">
-					<li class="footer__topColItem"><a href="#">Facebook</a></li>
-					<li class="footer__topColItem"><a href="#">Twitter</a></li>
-					<li class="footer__topColItem"><a href="#">Instagram</a></li>
-					<li class="footer__topColItem"><a href="#">YouTube</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	
-	<div class="footer__bottom">
-		<div class="container">
-			<div class="footer__bottomLeft">
-				<ul class="footer__bottomLeftLanguages">
-					<li class="footer__bottomLeftLanguageItem activeElement"><a href="#">English</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Deutsch</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Español</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Français</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Italiano</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">日本語</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Polski</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Português</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Русский</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Svenska</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">Türkçe</a></li>
-					<li class="footer__bottomLeftLanguageItem"><a href="#">简体中文</a></li>
-				</ul>
-				
-				<p class="footer__bottomLeftTimezone">Time Zone: <span class="activeElement">Europe/Moscow</span></p>
-				
-				<ul class="footer__bottomLeftTags tags">
-					<li class="tag">CBS Interactive © 2022 Last.fm Ltd. All rights reserved</li>
-					<li class="tag">Terms of Use</li>
-					<li class="tag">Privacy Policy</li>
-					<li class="tag">Legal Policies</li>
-					<li class="tag">Cookies Policy</li>
-					<li class="tag">Do Not Sell My Personal Information</li>
-					<li class="tag">Jobs at ViacomCBS</li>
-					<li class="tag">Last.fm Music</li>
-				</ul>
-			</div>
-			
-			<div class="footer__bottomRight">
-				<p>Audioscrobbler</p>
-				<img src="https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png" width="37" height="20"
-				     alt="footerLogo">
-			</div>
-		</div>
-	</div>
-
-
+<footer class='footer'>
+    <div class='footer__top'>
+        <div class='container footer__top__wrapper'>
+            <div class='footer__topCol'>
+                <h2 class='footer__topColTitle'>Company</h2>
+                <ul class='footer__topColItems'>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>About Last.fm</a>
+                    </li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Contact Us</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Jobs</a></li>
+                </ul>
+            </div>
+            
+            <div class='footer__topCol'>
+                <h2 class='footer__topColTitle'>Help</h2>
+                <ul class='footer__topColItems'>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Track My Music</a>
+                    </li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Community
+                        Support</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Community
+                        Guidelines</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Help</a></li>
+                </ul>
+            </div>
+            
+            <div class='footer__topCol'>
+                <h2 class='footer__topColTitle'>Goodies</h2>
+                <ul class='footer__topColItems'>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Download
+                        Scrobbler</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Developer API</a>
+                    </li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Free Music
+                        Downloads</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Merchandise</a></li>
+                </ul>
+            </div>
+            
+            <div class='footer__topCol'>
+                <h2 class='footer__topColTitle'>Account</h2>
+                <ul class='footer__topColItems'>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Sign Up</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Log In</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Subscribe</a></li>
+                </ul>
+            </div>
+            
+            <div class='footer__topCol'>
+                <h2 class='footer__topColTitle'>Follow Us</h2>
+                <ul class='footer__topColItems'>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Facebook</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Twitter</a></li>
+                    <li class='footer__topColItem'><a class='footer__topColItem-link link' href='#'>Instagram</a></li>
+                    <li class='footer__topColItem'><a class=' link' href='#'>YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class='footer__bottom'>
+        <div class='container footer__bottomWrapper'>
+            <div class='footer__bottomLeft'>
+                <ul class='footer__bottomLeftLanguages'>
+                    <li class='footer__bottomLeftLanguageItem activeElement'><a
+                        class='footer__bottomLeftLanguageItem-link link'
+                        href='#'>English</a></li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Deutsch</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Español</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Français</a></li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Italiano</a></li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>日本語</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Polski</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Português</a></li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Русский</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Svenska</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>Türkçe</a>
+                    </li>
+                    <li class='footer__bottomLeftLanguageItem'><a class='footer__bottomLeftLanguageItem-link link'
+                                                                  href='#'>简体中文</a></li>
+                </ul>
+                
+                <p class='footer__bottomLeftTimezone'>Time Zone: <span class='activeElement'>Europe/Moscow</span></p>
+                
+                <ul class='footer__bottomLeftTags tags'>
+                    <li class='tag footer__bottomLeftTag'>CBS Interactive © 2022 Last.fm Ltd. All rights reserved</li>
+                    <li class='tag footer__bottomLeftTag'>Terms of Use</li>
+                    <li class='tag footer__bottomLeftTag'>Privacy Policy</li>
+                    <li class='tag footer__bottomLeftTag'>Legal Policies</li>
+                    <li class='tag footer__bottomLeftTag'>Cookies Policy</li>
+                    <li class='tag footer__bottomLeftTag'>Do Not Sell My Personal Information</li>
+                    <li class='tag footer__bottomLeftTag'>Jobs at ViacomCBS</li>
+                    <li class='tag footer__bottomLeftTag'>Last.fm Music</li>
+                </ul>
+            </div>
+            
+            <div class='footer__bottomRight'>
+                <p>Audioscrobbler</p>
+                <img src='https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png' width='37' height='20'
+                     alt='footerLogo'>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<link
-	href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-	rel="stylesheet">
+<script src='index.js' type='module'></script>
 </body>
 </html>
