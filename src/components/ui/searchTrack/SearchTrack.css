@@ -1,0 +1,43 @@
+.tracks__item {
+	padding: 8px 0;
+	border-bottom: 1px solid #e7e7e7;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.tracks__item-link {
+	color: #000;
+}
+
+.tracks__item-play__image {
+	height: 32px;
+	width: 32px;
+}
+
+.tracks__item-img {
+	margin-left: 30px;
+	height: 32px;
+	width: 32px;
+}
+
+.tracks__item-favorite {
+	margin-left: 30px;
+	height: 16px;
+	width: 16px;
+}
+
+.tracks__item-name {
+	margin-left: 40px;
+	font-weight: 700;
+	width: 350px;
+}
+
+.tracks__item-artist {
+	font-weight: 300;
+}
+
+.tracks__item-duration {
+	margin-left: auto;
+	font-weight: 300;
+}

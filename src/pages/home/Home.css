@@ -1,0 +1,29 @@
+.content {
+	min-height: 55vh;
+}
+
+.content__section {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+}
+
+.content__title {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content__subtitle {
+	margin-top: 48px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content__subtitleLine {
+	margin-top: 18px;
+	width: 50px;
+	border: 1px solid #b90000;
+	align-self: center;
+}

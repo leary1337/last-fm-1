@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link:hover {
+	text-decoration: underline;
+}

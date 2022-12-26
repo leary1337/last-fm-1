@@ -1,0 +1,6 @@
+.content__tracks {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top: 18px;
+}

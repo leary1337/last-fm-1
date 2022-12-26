@@ -1,0 +1,14 @@
+.content__trackItem {
+	display: flex;
+	width: 370px;
+	height: 70px;
+}
+
+.content__trackItemRight {
+	margin-left: 15px;
+}
+
+.content__trackItemLogo {
+	width: 70px;
+	height: 70px;
+}
