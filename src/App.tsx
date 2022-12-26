@@ -1,23 +1,20 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+import './App.css';
+import './index.css';
+import Home from './pages/home/Home';
+import Search from './pages/search/Search';
 
-// export default App;
+const App = () => {
+  return (
+    <div className='App'>
+      <Routes>
+        <Route path='/' index element={<Home />} />
+        <Route path='/search' element={<Search />} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;

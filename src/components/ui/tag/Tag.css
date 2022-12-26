@@ -1,0 +1,5 @@
+.tag:nth-child(n+2):before {
+	content: "·";
+	font-weight: 400;
+	margin: 0 0.25em;
+}
